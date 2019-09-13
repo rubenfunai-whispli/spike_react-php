@@ -17,14 +17,16 @@ use React\Promise\Promise;
 // Composer
 require_once 'vendor/autoload.php';
 
-// GraphQL
+// Start the Event Loop
+$loop = React\EventLoop\Factory::create();
+$client = new React\HttpClient\Client($loop);
+
+// Initialise GraphQL
 require_once 'app/GraphQL/index.php';
 
 $schema = new Schema([
     'query' => $queryType
 ]);
-
-$loop = React\EventLoop\Factory::create();
 
 $server = new React\Http\Server(function (Psr\Http\Message\ServerRequestInterface $request) use ($schema, $queryType) {
     return new Promise(function ($resolve, $reject) use ($request, $schema, $queryType) {
