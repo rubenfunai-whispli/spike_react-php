@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "b9487f58-59de-4beb-b1dd-efa5eb9df301",
+		"name": "ReactPHP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Echo Query",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\n  echo(message: \"Hello World\")\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9999/graphql/default",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9999",
+					"path": [
+						"graphql",
+						"default"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Sleep Promise test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "query {\n  request_1,\n  request_2,\n  async_request_1,\n  async_request_2,\n}",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:9999/graphql/default",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "9999",
+					"path": [
+						"graphql",
+						"default"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
