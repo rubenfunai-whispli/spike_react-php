@@ -9,6 +9,7 @@
     "require": {
         "react/react": "^1.0",
         "react/http": "^0.8.4",
-        "webonyx/graphql-php": "^0.13.8"
+        "webonyx/graphql-php": "^0.13.8",
+      "ext-json": "*"
     }
 }
