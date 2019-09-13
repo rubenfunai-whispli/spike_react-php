@@ -1,0 +1,10 @@
+{
+    "name": "rubenfunai-whispli/spike-reactphp",
+    "authors": [
+        {
+            "name": "Ruben Funai",
+            "email": "ruben.funai@whispli.com"
+        }
+    ],
+    "require": {}
+}
